@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Redirect to login if username is not found
     if (!storedUsername) {
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     }
     // console.log(nameElement);
     // console.log(storedUsername);
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
         localStorage.removeItem('username');
 
         // Redirect to login
-        window.location.href = 'login.html';
+        window.location.href = 'index.html';
     });
 
     
