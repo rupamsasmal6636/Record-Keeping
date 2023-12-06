@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Dashboard</title>
+  
+</head>
+<body>
+  <nav class="header" id="navbar">
+    <div id="logo"><img src="logo.png" alt="logo" srcset=""></div>
+    <div class="user-info">
+      <span id="name">Name</span>
+      <span id="logout">Logout</span>
+    </div>
+  </nav>
+  <div class="dashboard-container">
+    <div class="sidebar">
+      <a href="/dashboard.html">Dashboard</a></li>
+    </div>
+    <div class="content">
+      <h2>Key Performance Indicators</h2>
+        <div class="dashboard-section">
+          <div class="dashboard-heading">
+            <h2>Gender</h2>
+          </div>
+          <div class="chart-container">
+            <canvas id="genderChart" width="400" height="250"></canvas>
+          </div>
+          <div class="data">
+            <p>Total Users: <span id="totalUsers"></span></p>
+            <p>Male Users: <span id="maleUsers"></span></p>
+            <p>Female Users: <span id="femaleUsers"></span></p>
+          </div>
+        </div>
+        <div class="dashboard-section">
+          <div class="dashboard-heading">
+            <h2>Employment Type</h2>
+          </div>
+          <div class="chart-container">
+            <canvas id="employmentChart" width="400" height="250"></canvas>
+          </div>
+          <div class="data">
+            <p>Total Users: <span id="totalUsersEmployment"></span></p>
+            <p>Full Time: <span id="fullTime"></span></p>
+            <p>Part Time: <span id="partTime"></span></p>
+            <p>Daily Wage: <span id="dailyWage"></span></p>
+          </div>
+        </div>
+      </div>
+  </div>
+  <script src="dashboardScript.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  </body>
+</html>

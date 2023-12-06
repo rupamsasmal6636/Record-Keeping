@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/******************* Login Page ********************* */
+
+.login-container {
+    max-width: 400px;
+    margin: 150px auto;
+    padding: 25px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    background-color: #e1e1e1;
+}
+
+.login-container h1 {
+    margin-bottom: 25px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin: 8px;
+}
+
+input {
+    margin-bottom: 18px;
+    padding: 8px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px;
+    font-size: 18px;
+    background-color: yellow;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(255, 208, 0);
+}
+
+/******************* Dashboad Page ********************* */
+
+/* Navbar Style */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+}
+#logo{
+    margin: 2px 25px;   
+}
+#logo img{
+    margin: 6px 12px;
+    height: 45px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    margin: 5px 25px;
+}
+
+.user-info span {
+    margin: 0px 15px;
+    cursor: pointer;
+    padding: 10px;
+}
+#logout{
+    background-color: yellow;
+    color: black;
+    border: none;
+    border-radius: 5px;
+}
+#logout:hover{
+    background-color: rgb(255, 208, 0);
+}
+
+/* dashboard container style  */
+.dashboard-container {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    height: 91.25vh;
+    width: 98vw;
+}
+.sidebar{
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 20vw;
+}
+.sidebar a{
+    margin: 10px 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+}
+
+.content {
+    margin: 32px;
+    border: 1px solid black;
+    max-height: 100vh;
+    width: 1700px;
+    border-radius: 15px;
+    /* background-color: #727272; */
+    /* color: #fff; */
+}
+.content h2{
+    margin: 20px;
+}
+
+.dashboard-section {
+    display: flex;
+    height: 29vh;
+    justify-content:space-around;
+    align-items: center;
+    padding: 30px;
+    border-bottom: 1px solid #ccc;
+}
