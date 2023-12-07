@@ -1,5 +1,3 @@
-// Add your JavaScript code here
-
 // Mock user data for demonstration purposes
 const userData = {
     totalUsers: 1024,
@@ -10,27 +8,22 @@ const userData = {
     dailyWage: 502,
 };
 // console.log('check script');
-// localStorage.getItem('username')
 
 // Display user information on the dashboard
 document.addEventListener('DOMContentLoaded', function () {
-    console.log("dashboard");
     const nameElement = document.getElementById('name');
     const logoutElement = document.getElementById('logout');
 
     // Retrieve username from local storage
     let storedUsername = localStorage.getItem('username');
-    // let storedUsername = 'Rupam';
 
     // Redirect to login if username is not found
     if (!storedUsername) {
         window.location.href = 'index.html';
     }
-    // console.log(nameElement);
-    // console.log(storedUsername);
 
     // Display username
-    nameElement.innerText = storedUsername;
+    nameElement.textContent = storedUsername;
 
     // Logout functionality
     logoutElement.addEventListener('click', function () {
@@ -41,7 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
         window.location.href = 'index.html';
     });
 
-    
     // Display pi charts and numbers based on user data using Chart.js
 
     // Access the canvas elements

@@ -7,7 +7,7 @@ body {
 /******************* Login Page ********************* */
 
 .login-container {
-    max-width: 400px;
+    width: 25vw;
     margin: 150px auto;
     padding: 25px;
     border: 1px solid #ccc;
@@ -50,14 +50,13 @@ button:hover {
 
 /******************* Dashboad Page ********************* */
 
-/* Navbar Style */
-.header {
+/******* Navbar Style ******/
+#navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
     color: #fff;
-    width: 100%;
 }
 #logo{
     margin: 2px 25px;   
@@ -88,34 +87,33 @@ button:hover {
     background-color: rgb(255, 208, 0);
 }
 
-/* dashboard container style  */
+/********** dashboard container style **********/
 .dashboard-container {
     margin: 0;
     display: flex;
-    flex-direction: row;
     height: 91.25vh;
-    width: 98vw;
+    width: 100vw;
 }
+/***** Sidebar Style  *********/
 .sidebar{
     background-color: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* border: 1px solid black; */
+    border-right: 1px solid black;
     width: 20vw;
 }
 .sidebar a{
-    margin: 10px 15px;
+    margin: 15px 15px;
     text-decoration: none;
     color: black;
     font-size: 1.2rem;
 }
-
+/************* Main content Style **********/
 .content {
     margin: 32px;
     border: 1px solid black;
-    max-height: 100vh;
-    width: 1700px;
+    width: 100vw;
     border-radius: 15px;
     /* background-color: #727272; */
     /* color: #fff; */
